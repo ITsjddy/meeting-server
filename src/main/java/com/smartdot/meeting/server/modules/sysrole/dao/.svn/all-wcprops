@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/mau/!svn/ver/82128/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysrole/dao
+END
+IRolePrivilegeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/mau/!svn/ver/82127/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysrole/dao/IRolePrivilegeDao.java
+END
+ISysRoleDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/mau/!svn/ver/81840/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysrole/dao/ISysRoleDao.java
+END

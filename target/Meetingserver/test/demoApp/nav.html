@@ -1,0 +1,38 @@
+<style>
+.navbar-left .navbar-left-list li.active {
+  background: #41c0e6;
+  }
+  </style>
+<nav class="navbar-left" role="navigation" style="position:absolute">
+	<div class="sidebar-collapse">
+		<div class="bar-box opened common-bar">
+			<div class="navbar-left-header">
+				消息箱&ensp; <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i>
+			</div>
+			<a onclick="location.href = location.href.replace('directive','part')">没有左侧边栏</a>
+			<ul class="navbar-left-list">
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_table'})">表格分页器</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_pager'})">自定义分页器</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_pager1'})">自定义分页器1</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_pager2'})">自定义分页器2</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'pager_in_pager'})">嵌套分页器</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_refactor'})">filter重构器</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_tree'})">部门树结构</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_pop'})">弹出框</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_city'})">省市级联</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'user_image'})">人员头像</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'date_time_picker'})">日期控件（废弃）</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'date_time_select'})">日期时间控件</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'uisortable'})">拖拽排序控件</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_flow'})">流程相关控件</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_permission'})">前端权限控制</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_uploader'})">文件上传</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'data_validation'})">数据验证</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'tinymce'})">mce</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'iq_title'})">鼠标移动显示标签title</a></li>
+				<li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'bread_crumb_navigation'})">面包屑导航</a></li>
+			    <li ui-sref-active="active"><a ui-sref="index.demo.directive({'name':'uiselect'})">随意添加的选择（自己看代码）</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>

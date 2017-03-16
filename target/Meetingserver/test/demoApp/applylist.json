@@ -1,0 +1,6 @@
+[
+{"id":1,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"123456","costcenter":"信息化管理部","costcenterid":"12345678","date":"2014-11-11","money":"111.00","state":"已结束"},
+{"id":2,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"123456","costcenter":"信息化管理部","costcenterid":"12345678","date":"2013-11-11","money":"222.00","state":"草稿"},
+{"id":3,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"123456","costcenter":"信息化管理部","costcenterid":"12345678","date":"2015-01-03","money":"333.00","state":"部门审批"},
+{"id":4,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"111111","costcenter":"信息化管理部","costcenterid":"12345678","date":"2014-01-03","money":"444.00","state":"部门审批"}
+]

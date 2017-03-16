@@ -1,0 +1,43 @@
+
+<div ng-controller="demo_pagerCtrl">
+<textarea  style="width: 800px;height: 200px;background-color:#ccc" disabled>
+iq_pager_list 分页器包裹层
+    data        分页的对象。按字符串从父对象中取值，因此只能直接使用对象，不能使用子对象。（不能加“.”点号）
+
+iq_pager_list_pager    分页器
+    changepage        换页调用的方法，必须、函数对象。只有唯一一个参数（对象，数据结构见下文）
+                        1、点开头的字符串 从分页器包裹层寻找指定的子对象
+                        2、其他 父scope中的对象
+    page            页码1、为空 让分页器自行控制页码
+                        2、点开头的字符串    从分页器包裹层寻找指定的子对象
+                        3、其他字符串        从父对象寻找制定对象
+    totalpage        总页码 必须：
+                        1、点开头的字符串    从分页器包裹层寻找指定的子对象
+                        2、其他字符串        从父对象寻找制定对象
+iq_pager_more        更多（前段分页器）
+    iq_pager_more    循环体
+                        1、点开头的字符串    从分页器包裹层寻找指定的子对象
+                        2、空                分页器包裹层指定的对象
+    len                循环步长 指定数值，空则默认5
+
+changepage参数 javascript对象
+{
+    page:""//请求页码
+}
+</textarea>
+    <iq_pager_list data="list">
+        <iq_pager_list_pager></iq_pager_list_pager>
+        
+        <ul>
+            <li ng-repeat="a in list.data.content">
+	        	<span>姓名：{{a.name}} itcode:{{a.itcode}}</span>
+	        	<br/>
+	            <span>{{a.dept}}</span><span>{{a.costcenter}}</span>
+        	</li>
+        </ul>
+        
+        <iq_pager_list_pager page=".data.number" totalpage=".data.totalPages" changepage="pageChange"></iq_pager_list_pager>
+    </iq_pager_list>
+    <button ng-click="pageChange({'page':1})">change</button>
+
+ </div>

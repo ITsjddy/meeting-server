@@ -1,0 +1,40 @@
+10
+
+dir
+84326
+http://mausvn.smartdot.com.cn:8013/svn/mau/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/department
+http://mausvn.smartdot.com.cn:8013/svn/mau
+
+
+
+2017-03-03T09:56:33.163275Z
+84190
+zhanglei
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+afea2739-b1fe-a841-ba7e-4db205294221
+
+controller
+dir
+
+dao
+dir
+
+model
+dir
+
+service
+dir
+

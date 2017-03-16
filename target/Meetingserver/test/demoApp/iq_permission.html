@@ -1,0 +1,35 @@
+<div page-title="权限">
+iq_permission使用说明：<br/>
+<textarea style="width: 600px;height: 200px;" disabled>1、传入字符串，和ngIf使用相同
+例如：<div iq_permission="'person:read'">有权限</div>
+ <span iq_permission="au"> 有权限啦</span>
+注意：单引号，表示他是一个静态字符串；不加单引号，表示从scope里面的指定对象取值，是一个变量
+2、传入对象，{v:'',key:''} key有3个类别：not,all,any
+例如：{v:'person:write',key:''} 在有person:write权限时显示
+{v:'person:write',key:'not'} 在没有有person:write权限时显示
+{v:'person:write,person:operation',key:'all'} 在有person:write且person:operation。。权限时显示
+{v:'person:write,person:operation',key:'any'} 在有person:write或person:operation。。权限时显示
+注：如果某人都有A,B权限
+ 1、iq_permission="{v:'A,B',key:'all'}"
+ 2、iq_permission="A,B"
+ 都可以显示，但是如果页面中其他地方A,B有多处分开使用，建议使用第一种；如果A,B一直连用不分开，建议使用第二种</textarea>
+<br/>
+用户1234，密码1 输入框粘贴card:allWriter<br/>
+有<input ng-model="p1" value="card:write">的权限：<br/> <ul iq_permission="p1"><li> 有权限啦</li></ul>
+ <br/>
+有<input ng-model="p2" value="card:write">的权限： <br/>
+<ul iq_permission="{v:p2,key:''}"><li> 有权限啦</li></ul>
+<ul iq_permission="{v:p2}"><li> 有权限啦</li></ul>
+<ul iq_permission="{v:p2,key:'not'}"><li> 没有权限啦</li></ul>
+<br/>
+输入框粘贴card:allWriter,wcontact:allWriter<br/>
+有<input ng-model="p3" value="card:write">的权限： <br/>
+任一：<ul iq_permission="{v:p3,key:'any'}"><li> 有任一权限啦</li></ul><br/>
+所有：<ul iq_permission="{v:p3,key:'all'}"><li> 有所有权限啦</li></ul>
+
+$iq_permission服务使用，提供3个方法 
+<table><tr><td width="100px">has</td><td>String</td><td>查询某一条权限</td></tr>
+<tr><td>hasAny</td></td><td>String[]</td><td>查询是否包含任一一条权限</td></tr>
+<tr><td>hasAll</td></td><td>String[]</td><td>查询是否包含所有权限</td></tr>
+
+</div>

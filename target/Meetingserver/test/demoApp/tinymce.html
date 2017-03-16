@@ -1,0 +1,14 @@
+<div ng-controller="mceCtrl" id="nodes">
+<textarea ui-tinymce="{trusted: true}"
+      ng-model="demo.tinymce"></textarea>
+      <textarea ui-tinymce="mceOption"
+      ng-model="demo.tinymce1"></textarea>
+      
+      <button ng-click="showDemo()"></button>
+      {{demo.tinymce}}
+      
+      {{demo.tinymce1}}
+      
+      {{demo.tinymce2}}
+      
+</div>

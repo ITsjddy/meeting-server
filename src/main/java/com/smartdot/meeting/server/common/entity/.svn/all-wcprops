@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/mau/!svn/ver/84307/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity
+END
+Folder.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mau/!svn/ver/84214/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Folder.java
+END
+GuestAndServicePersonnel.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/mau/!svn/ver/82753/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/GuestAndServicePersonnel.java
+END
+NewsColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/84758/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/NewsColumn.java
+END
+SavorPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/82539/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SavorPoint.java
+END
+SysPrivilege.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/mau/!svn/ver/84307/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SysPrivilege.java
+END
+Media.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/mau/!svn/ver/82808/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Media.java
+END
+QuestionnaireAnswer.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/mau/!svn/ver/82185/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/QuestionnaireAnswer.java
+END
+PublicshComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/mau/!svn/ver/84191/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/PublicshComment.java
+END
+DataDictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/mau/!svn/ver/84932/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/DataDictionary.java
+END
+ImportTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/mau/!svn/ver/83447/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/ImportTemplate.java
+END
+Member.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mau/!svn/ver/83219/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Member.java
+END
+GroupTokens.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/mau/!svn/ver/82224/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/GroupTokens.java
+END
+Guest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/mau/!svn/ver/83432/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Guest.java
+END
+JpushEntiy.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/83264/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/JpushEntiy.java
+END
+Exhibitors.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/82378/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Exhibitors.java
+END
+AppVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/83283/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/AppVersion.java
+END
+MeetingAndMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/mau/!svn/ver/83819/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/MeetingAndMember.java
+END
+BaseEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/82229/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/BaseEntity.java
+END
+Department.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/84333/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Department.java
+END
+CommonTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/82587/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/CommonTask.java
+END
+GroupAdministrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/mau/!svn/ver/82513/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/GroupAdministrator.java
+END
+SampleEntity.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/mau/!svn/ver/81611/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SampleEntity.java
+END
+SmsPushTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/mau/!svn/ver/82244/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SmsPushTemplate.java
+END
+QuestionnaireTopic.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/mau/!svn/ver/82185/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/QuestionnaireTopic.java
+END
+ServicePersonnel.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/mau/!svn/ver/84490/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/ServicePersonnel.java
+END
+CloudGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/83096/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/CloudGroup.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/mau/!svn/ver/81609/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Log.java
+END
+Audience.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mau/!svn/ver/82378/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Audience.java
+END
+SysRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mau/!svn/ver/81988/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SysRole.java
+END
+Questionnaire.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mau/!svn/ver/82319/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Questionnaire.java
+END
+SystemSetting.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mau/!svn/ver/84296/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SystemSetting.java
+END
+SmsPushs.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mau/!svn/ver/82861/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SmsPushs.java
+END
+FileUpload.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/mau/!svn/ver/84192/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/FileUpload.java
+END
+RolePrivilege.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mau/!svn/ver/81610/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/RolePrivilege.java
+END
+ConHall.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mau/!svn/ver/82527/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/ConHall.java
+END
+Template.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mau/!svn/ver/84889/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Template.java
+END
+MemberHotel.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/mau/!svn/ver/84600/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/MemberHotel.java
+END
+DataDictionaryType.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/mau/!svn/ver/84644/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/DataDictionaryType.java
+END
+Issue.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/mau/!svn/ver/83512/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Issue.java
+END
+SysUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mau/!svn/ver/84213/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SysUser.java
+END
+QuestionnaireOption.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/mau/!svn/ver/82185/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/QuestionnaireOption.java
+END
+Stroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/mau/!svn/ver/84934/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Stroke.java
+END
+Schedule.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mau/!svn/ver/83512/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Schedule.java
+END
+GroupRole.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mau/!svn/ver/81608/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/GroupRole.java
+END
+TestDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mau/!svn/ver/81857/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/TestDemo.java
+END
+News.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/mau/!svn/ver/84799/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/News.java
+END
+SysGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/mau/!svn/ver/81488/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SysGroup.java
+END
+SystemConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/mau/!svn/ver/81736/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/SystemConfig.java
+END
+Emergency.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mau/!svn/ver/81811/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/entity/Emergency.java
+END

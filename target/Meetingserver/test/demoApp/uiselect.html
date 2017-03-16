@@ -1,0 +1,37 @@
+<div ng-controller="demo_uiselectCtrl">
+this is a ui-select demo
+<br/>
+ui-select-match 显示选中的条目
+ui-select-choices 搜索中的条目
+<ui-select ng-model="mulselect.a" multiple>
+    <ui-select-match placeholder="选一个人">姓名：{{$item.name}}金额：{{$item.money}}</ui-select-match>
+    <ui-select-choices repeat="one in list | filter:{name:$select.search}" refresh="getData($select)" refresh-delay="500">
+      姓名：{{one.name}}&nbsp;itcode:{{one.itcode}}&nbsp;money:{{one.money}}
+    </ui-select-choices></ui-select>
+
+<br/>
+value of mulselect :<br/>
+{{mulselect}}
+<br/>
+<br/>
+
+<ui-select ng-model="singleselect.a">
+    <ui-select-match placeholder="选一个人">{{$select.selected.name}}金额：{{$select.selected.money}}</ui-select-match>
+    <ui-select-choices repeat="one in list | filter:{name:$select.search}" refresh="singleGetData($select)" refresh-delay="500">
+      姓名：{{one.name}}&nbsp;itcode:{{one.itcode}}&nbsp;money:{{one.money}}
+    </ui-select-choices></ui-select>
+
+<br/>
+value of singleselect :<br/>
+{{singleselect}}
+
+
+<ui-select ng-model="singleselect2.a">
+    <ui-select-match placeholder="选一个人">{{$select.selected.name}}金额：{{$select.selected.money}}</ui-select-match>
+    <ui-select-choices repeat="one in list | filter:{name:$select.search}" refresh="singleGetData($select)" refresh-delay="500">
+      姓名：{{one.name}}&nbsp;itcode:{{one.itcode}}&nbsp;money:{{one.money}}
+    </ui-select-choices></ui-select>
+
+
+
+</div>

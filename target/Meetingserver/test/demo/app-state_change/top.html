@@ -1,0 +1,21 @@
+	<div class="select-lead-nav ">
+	  <a class="nav-tab active" href="javascript:void(0)">工作联系单</a>
+	</div>
+	<div class="select-contains">
+	  <div class="select-content-item active">
+	    <div class="select-lead-nav nav-line">
+	      <a ng-class="({'nav-tab':true,'active':state == activeState})" ng-repeat="state in states" ng-click="goToUrl(state.value,'')">{{state.name}}</a>
+	    </div>
+	
+	    <div class="select-contents">
+	      <div class="select-content-item active">
+	          <ul class="sifting-block" ng-if="activeState.substates.length>0">
+	            <li class="sift-item">
+	              <label class="sift-label">审批状态：</label>
+	              <span ng-class="({'sift-type':true,'active':one.flag})" ng-repeat="one in activeState.substates" ng-click="goToUrl(activeState.value,one.value)">{{one.name}}</span>
+	            </li>
+	          </ul>
+	      </div>
+	    </div>
+	  </div>
+	</div>

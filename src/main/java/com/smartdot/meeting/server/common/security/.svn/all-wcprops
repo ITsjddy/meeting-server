@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mau/!svn/ver/81865/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/security
+END
+CustomUserDetailsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/mau/!svn/ver/84512/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/security/CustomUserDetailsService.java
+END
+CustomAccessDecisionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/mau/!svn/ver/81864/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/security/CustomAccessDecisionManager.java
+END
+CustomFilterInvocationSecurityMetadataSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/mau/!svn/ver/84256/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/security/CustomFilterInvocationSecurityMetadataSource.java
+END
+CustomAccessDeniedHandlerManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/mau/!svn/ver/81835/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/common/security/CustomAccessDeniedHandlerManager.java
+END

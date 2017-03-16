@@ -1,0 +1,47 @@
+<style>
+ul.outter{
+    margin: 10px;
+    list-style: none;
+}
+ul.outter>li{
+    margin: 15px;
+    display:block;
+}
+ul.inner{
+    list-style: none;
+    left:25px;
+    display: block;
+}
+</style>
+<div ng-controller="demo_pagerInPagerCtrl">
+
+    <iq_pager_list data="list">
+
+        <ul class="outter">
+            <li ng-repeat="a in list.content">
+	        	<span>状态：{{a.state}}
+	        	<br/>
+
+                    <iq_pager_list data="a">
+                        <ul class="inner">
+                            <li ng-repeat="b in a.data.content">
+                                <span>姓名：{{b.name}}-{{b.id}}</span>
+                            </li>
+
+            				<li iq_pager_more=".data.content"></li>
+                        </ul>
+                        <iq_pager_list_pager page=".data.number" totalpage=".data.totalPages" changepage=".pageChange"></iq_pager_list_pager>
+                        
+                    </iq_pager_list>
+                    <input ng-model="valll"></input>
+                    <button ng-click="a.add(valll)"></button>
+                <br/>
+        	</li>
+
+            <li iq_pager_more=".content"></li>
+        </ul>
+        
+        <iq_pager_list_pager page=".page" totalpage=".totalpage" changepage=".pageChange"></iq_pager_list_pager>
+    </iq_pager_list>
+    <button ng-click="page({'page':1})">change</button>
+ </div>

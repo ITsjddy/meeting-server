@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd  
+	 	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd  
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd">
+
+	<mvc:annotation-driven conversion-service="conversionService">
+		<mvc:message-converters>
+	        <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+	        <bean class="org.springframework.http.converter.ResourceHttpMessageConverter"/>
+	        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="objectMapper" ref="jackson2ObjectMapper" />
+			</bean>
+	    </mvc:message-converters>
+	</mvc:annotation-driven>
+	
+	
+	
+	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		<property name="converters">
+			<list>
+				<bean class="com.smartdot.meeting.server.common.web.bind.converter.DateConverter" />
+				<bean class="com.smartdot.meeting.server.common.web.bind.converter.TimestampConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<context:annotation-config />
+
+	<bean id="jackson2ObjectMapper" class="com.fasterxml.jackson.databind.ObjectMapper">
+		<property name="dateFormat">
+			<bean class="java.text.SimpleDateFormat">
+				<constructor-arg type="java.lang.String" value="yyyy-MM-dd" />
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- use cgilib to support aop on Controller -->
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<context:component-scan base-package="com.smartdot.meeting.server" />
+
+	<!-- jaxb xml marshaller
+	<bean id="jaxb2XMLMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+		<property name="classesToBeBound">
+			<array>
+				<value>com.iss.cloud.portal.modules.sample.model.ComplexForm</value>
+				<value>com.iss.cloud.portal.common.web.model.exception.ISSException</value>
+			</array>
+		</property>
+	</bean>
+	 -->
+
+	<!-- message converters -->
+	<util:list id="messageConverters">
+		<!-- For JSON Converting -->
+		<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+		<!-- For XML Converting 
+		<bean class="org.springframework.http.converter.xml.MarshallingHttpMessageConverter">
+			<property name="marshaller" ref="jaxb2XMLMarshaller" />
+		</bean>
+		-->
+	</util:list>
+
+	
+	<!-- request mapping handler mapping
+	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+	 -->
+	<!-- request mapping handler adapter, set prop messageConverters to avoid org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation in JUnit
+	<bean id="requestMappingHandlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<property name="messageConverters" ref="messageConverters" />
+	</bean>
+	 -->
+
+	<!-- content neotiating view resolver, a delegate over the accept header -->
+	<bean id="contentNegotiatingViewResolver" class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+		<property name="contentNegotiationManager">
+			<bean class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+				<property name="mediaTypes">
+					<props>
+						<prop key="atom">application/atom+xml;charset=UTF-8</prop>
+						<prop key="xml">application/xml;charset=UTF-8</prop>
+						<prop key="html">text/html;charset=UTF-8</prop>
+						<prop key="json">application/json;charset=UTF-8</prop>
+					</props>
+				</property>
+			</bean>
+		</property>
+		
+		<property name="defaultViews">
+			<list>
+				<bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+					<!-- <property name="">
+						<bean class="com.fasterxml.jackson.databind.ObjectMapper">
+							<property name="serializationInclusion" value="NON_NULL" />
+						</bean>
+					</property> -->
+				</bean>
+				<!-- <bean class="org.springframework.web.servlet.view.xml.MarshallingView">
+					<property name="marshaller" ref="jaxb2XMLMarshaller" />
+				</bean> -->
+			</list>
+		</property>
+
+		<property name="viewResolvers">
+			<list>
+				<bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
+				<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+					<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+					<property name="prefix" value="/WEB-INF/jsp/" />
+					<property name="suffix" value=".jsp" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+
+	<!-- FILE UPLOAD -->
+	<!-- multipart resolver over commons fileupload -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- one of the properties available; the maximum file size in bytes -->
+		<property name="maxUploadSize" value="1000000000000" />
+	</bean>
+
+
+	
+
+	<!-- change ur comment into English -->
+	<!-- GLOBAL EXCEPTION -->
+	<bean id="compositeExceptionResolver" class="org.springframework.web.servlet.handler.HandlerExceptionResolverComposite">
+		<property name="order" value="0" />
+		<property name="exceptionResolvers">
+			<list>
+				<!-- for custom exception handler -->
+				<bean class="com.smartdot.meeting.server.common.web.handler.exception.SmartdotMappingExceptionResolver">
+					<property name="objectMapper" ref="jackson2ObjectMapper" />
+				</bean>
+			
+				<!-- for @ExceptionHandler -->
+				<bean class="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver">
+					<property name="messageConverters" ref="messageConverters" />
+				</bean>
+
+				<!-- for Default web exception handler
+				 @see org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver..doResolveException -->
+				<bean class="org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver">
+				
+				</bean>
+				
+				
+			</list>
+		</property>
+	</bean>
+
+	
+</beans>

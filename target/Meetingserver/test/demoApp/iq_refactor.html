@@ -1,0 +1,30 @@
+<div>
+简单模式传入字符串<br/>
+填入true或者false（字符串）<input ng-model="a">: <br/>
+&nbsp;&nbsp;简单模式  模型a: a | iq_refactor:"男,true;女,false" <br/>
+<span style="color:red">{{a | iq_refactor:"男,true;女,false" }}</span><br/><br/>
+
+复杂模式：传入对象，注意结尾双括号之前要有空格
+{
+formula:true//公式模式 true使用公式模式，显示公式为真的值，否则使用字符串匹配模式
+	value:""//对应字串，必备
+			//value使用json对象格式时 忽略separator
+	separator1:"",//小分隔符默认为","
+	separator2:"",//大分隔符默认为";"
+	def_val:""//默认值
+}<br/>
+
+填入true或者false（字符串）<input ng-model="b">: <br/>
+&nbsp;&nbsp;复杂匹配模式 value使用json，字符串匹配: | iq_refactor:{value:{'男':'true','女':'false'},def_val:"未知"} <br/>
+<span style="color:red">{{b| iq_refactor:{value:{'男':'true','女':'false'},def_val:"未知"} }}</span><br/><br/>
+
+&nbsp;&nbsp;复杂匹配模式 可以自己指定分隔符，字符串匹配 : | iq_refactor:{separator1:":", separator2:"|", value:"男:true|女:false|"} <br/>
+<span style="color:red">{{b| iq_refactor:{separator1:":", separator2:"|", value:"男:true|女:false|"} }}</span><br/><br/>
+
+填入数字<1 =1 >1 3种<input ng-model="c"> <br/>
+&nbsp;&nbsp;复杂公式模式 可以自己指定分隔符，公式为真返回 : | iq_refactor:{formula:true,separator1:":",separator2:"|",value:"男:key<1|女:key>1|未知:key==1",}  <br/>
+<span style="color:red">{{c | iq_refactor:{formula:true,separator1:":",separator2:"|",value:"男:key<1|女:key>1|未知:key==1",} }}</span><br/>
+
+&nbsp;&nbsp;复杂公式模式  value使用json，公式为真返回 : | iq_refactor:{formula:true,value:{'男':'key<1','女':'key>1','未知':'key==1'},def_val:"未知"}  <br/>
+<span style="color:red">{{c | iq_refactor:{formula:true,value:{'男':'key<1','女':'key>1','未知':'key==1'},def_val:"未知"} }}</span><br/>
+</div>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/mau/!svn/ver/84603/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/webapp/WEB-INF/jsp/newsColumn
+END
+newsColumnList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mau/!svn/ver/84758/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/webapp/WEB-INF/jsp/newsColumn/newsColumnList.jsp
+END
+newsColumnAdd.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mau/!svn/ver/84759/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/webapp/WEB-INF/jsp/newsColumn/newsColumnAdd.jsp
+END
+newsColumnDetail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mau/!svn/ver/84758/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/webapp/WEB-INF/jsp/newsColumn/newsColumnDetail.jsp
+END
+newsColumnEdit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mau/!svn/ver/84759/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/webapp/WEB-INF/jsp/newsColumn/newsColumnEdit.jsp
+END

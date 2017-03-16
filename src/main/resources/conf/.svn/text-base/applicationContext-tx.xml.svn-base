@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/jee 
+	http://www.springframework.org/schema/jee/spring-jee.xsd">
+
+
+
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean name="openSessionInViewInterceptor" class="org.springframework.orm.hibernate5.support.OpenSessionInViewInterceptor">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<!--<jee:jndi-lookup id="userTransaction" jndi-name="java:appserver/TransactionManager" proxy-interface="javax.transaction.UserTransaction"/> <bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager"> 
+		<property name="userTransaction" ref="userTransaction" /> </bean> -->
+
+	<!-- -->
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="false" />
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="save*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="delete*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="remove*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="Exception" />
+			<tx:method name="get*" propagation="REQUIRED" />
+			<tx:method name="load*" propagation="REQUIRED" />
+			<tx:method name="exist*" propagation="REQUIRED" />
+			<tx:method name="*" read-only="true" />
+		</tx:attributes>
+	</tx:advice>
+
+	<bean id="readWriteDataSourceTransactionProcessor" class="com.smartdot.meeting.server.common.datasource.ReadWriteDataSourceProcessor">  
+		<property name="forceChoiceReadWhenWrite" value="false"/>  
+	</bean>
+	
+	<aop:config>
+		<aop:pointcut id="serviceOperation" expression="execution(* com.smartdot.meeting.server..service.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation" />
+		 <!-- 通过AOP切面实现读/写库选择 -->  
+	    <aop:aspect order="-2147483648" ref="readWriteDataSourceTransactionProcessor">  
+	       <aop:around pointcut-ref="serviceOperation" method="determineReadOrWriteDB"/>  
+	    </aop:aspect>  
+	</aop:config>
+	
+	<aop:aspectj-autoproxy proxy-target-class="true"/> 
+</beans>

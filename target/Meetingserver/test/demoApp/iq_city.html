@@ -1,0 +1,34 @@
+<div class="container" ng-controller="cityCtrl">
+    <h1 class="text-center text-danger">Angular 地址联动示例</h1>
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label class="col-md-2 control-label">
+                地址			
+            </label>
+            <div class="col-md-8">
+            	<select class="form-control" ng-model="address.country" ng-options="v.name for v in division"
+                        ng-change="address.province='';address.city='';address.district='';">
+                    <option value="">国家</option>
+                </select>
+                <select class="form-control" ng-model="address.province" ng-options="v.name for v in address.country.subMenu"
+                        ng-change="address.city='';address.district='';">
+                    <option value="">省</option>
+                </select>
+                <select class="form-control" ng-model="address.city" ng-options="v.name for v in address.province.subMenu"
+                        ng-change="address.district='';">
+                    <option value="">市</option>
+                </select> 
+                <select class="form-control" ng-model="address.district" ng-options="v for v in address.city.subMenu">
+                    <option value="">县</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-primary btn-sm" ng-click="submit()">
+                    提交
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

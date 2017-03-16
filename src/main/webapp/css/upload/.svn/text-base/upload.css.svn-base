@@ -1,0 +1,20 @@
+#imgvo{
+	border:solid 2px black;
+	margin-right: 2px;
+	margin-top: 2px;
+}
+.inputcss
+{
+	color:#333333;
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+	border:solid 2px #CCCCCC;
+}
+.buttoncss
+{
+	color:#333333;
+	font-family: "Tahoma"; 
+	font-size: 12px; 
+	background-color:#FFFFFF;
+	border:solid 1px #CCCCCC;
+}

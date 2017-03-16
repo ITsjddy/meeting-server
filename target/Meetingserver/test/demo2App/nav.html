@@ -1,0 +1,23 @@
+<nav class="navbar-left navbar-default navbar-static-side" role="navigation"
+	ng-controller="NavCtrl">
+	<div class="sidebar-collapse">
+		<div class="bar-box opened common-bar">
+			<div class="navbar-left-header">
+				消息箱&ensp; <i class="fa fa-angle-up"></i> <i class="fa fa-angle-down"></i>
+			</div>
+			<ul class="navbar-left-list">
+
+            <li ui-sref-active="active">
+                <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">首页</span> </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">另一个页面</span></a>
+            </li>
+            <li ng-repeat="config in appsConfig" ui-sref-active="active">
+                <a ui-sref="{{config.state}}"><i class="fa fa-desktop"></i> <span class="nav-label">{{config.label}}</span></a>
+             </li>
+        </ul>
+        </div>
+
+    </div>
+</nav>

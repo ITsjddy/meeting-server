@@ -1,0 +1,33 @@
+<div ng-controller="demo_formCtrl">
+<form name="form1">
+		form.$valid={{form1.$valid}};
+		<br/>
+		<input type="text" ng-model="inputmodel1" name="input1" required ng-options="{updateOn:'blur'}"> <button ng-click="change()" value="click">click</button>
+		<br/>
+		input1.$valid={{form1.input1.$valid}}
+		<br/>
+		inputmodel={{inputmodel1}}
+	</form>
+		-------------------------------
+		<br/>
+
+	<form name="form2">
+		form.$valid={{form2.$valid}};
+		<br/>
+		<input type="text" ng-model="obj.inputmodel2" required demo-form-dire ><button ng-click="obj.inputmodel2='123'" value="click">click</button>
+		<br/>
+		input2.$valid={{form2.input2.$valid}}
+		<br/>
+		inputmodel={{obj.inputmodel2}}
+	</form>
+		-------------------------------
+	<form name="form3">
+		form.$valid={{form3.$valid}};
+		<br/>
+		<input type="text" ng-model="obj.inputmodel3" required ng-datepicker>
+		<br/>
+		input2.$valid={{form3}}
+		<br/>
+		inputmodel={{obj.inputmodel3}}
+	</form>
+</div>

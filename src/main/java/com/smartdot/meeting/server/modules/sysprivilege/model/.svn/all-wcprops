@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/mau/!svn/ver/84308/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysprivilege/model
+END
+SysPrivilegeVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/mau/!svn/ver/84308/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysprivilege/model/SysPrivilegeVO.java
+END
+SysPrivilegeSearch.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/mau/!svn/ver/84308/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysprivilege/model/SysPrivilegeSearch.java
+END
+SysPrivilegeForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/mau/!svn/ver/84308/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysprivilege/model/SysPrivilegeForm.java
+END
+SysPrivilegePageForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/mau/!svn/ver/84308/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/sysprivilege/model/SysPrivilegePageForm.java
+END

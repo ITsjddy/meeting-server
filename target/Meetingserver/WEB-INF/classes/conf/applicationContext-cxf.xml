@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:cxf="http://cxf.apache.org/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs" xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+		http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
+
+	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+	
+	<bean id="swagger2Feature" class="org.apache.cxf.jaxrs.swagger.Swagger2Feature">
+        <!-- customize some of the properties -->
+        <property name="basePath" value="/app/swaggerSample"/>
+        
+        <property name="prettyPrint" value="true" />
+        <property name="scanAllResources" value="true" />
+    </bean>
+
+	<jaxrs:server id="rest-container" address="/">
+		<jaxrs:providers>
+			<bean class="com.smartdot.meeting.server.common.rs.provider.SmartdotJacksonJaxbJsonProvider">
+				<constructor-arg type="com.fasterxml.jackson.databind.ObjectMapper">
+					<bean class="com.fasterxml.jackson.databind.ObjectMapper">
+						<property name="serializationInclusion" value="NON_NULL" />
+					</bean>
+				</constructor-arg>
+			</bean>
+			<!-- 
+			<bean class="org.apache.cxf.jaxrs.provider.json.JSONProvider">
+				<property name="dropRootElement" value="true" />
+				<property name="dropCollectionWrapperElement" value="true" />
+				<property name="serializeAsArray" value="true" />
+			</bean>
+			 -->
+			  
+			 <bean class="com.smartdot.meeting.server.common.rs.provider.FaultOutHandleProvider" /> 
+			 <!--
+			 <bean class="com.iss.cloud.portal.common.rs.provider.SecurityExceptionProvider"/>
+			  -->
+		</jaxrs:providers>
+		<jaxrs:serviceBeans>
+			<ref bean="sampleFacade"/>
+		</jaxrs:serviceBeans>
+		<jaxrs:features>
+            <ref bean="swagger2Feature" />
+        </jaxrs:features>
+	</jaxrs:server>
+
+</beans>

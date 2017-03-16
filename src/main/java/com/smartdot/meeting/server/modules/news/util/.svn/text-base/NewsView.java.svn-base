@@ -1,0 +1,46 @@
+package com.smartdot.meeting.server.modules.news.util;
+
+import com.smartdot.meeting.server.common.entity.News;
+
+public class NewsView extends News{
+
+	/**
+	 * <p>
+	 * <pre>
+	 * <b>属性描述：</b>
+	 * 	描述内容
+	 * </pre>
+	 * </p>
+	 */
+	private static final long serialVersionUID = 8347899029174732150L;
+	private String newsCreateTime;
+	private String categoryName;
+	private String languageName;
+	private String newsUpdateTime;
+	public String getNewsCreateTime() {
+		return newsCreateTime;
+	}
+	public void setNewsCreateTime(String newsCreateTime) {
+		this.newsCreateTime = newsCreateTime;
+	}
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+	public String getLanguageName() {
+		return languageName;
+	}
+	public void setLanguageName(String languageName) {
+		this.languageName = languageName;
+	}
+	public String getNewsUpdateTime() {
+		return newsUpdateTime;
+	}
+	public void setNewsUpdateTime(String newsUpdateTime) {
+		this.newsUpdateTime = newsUpdateTime;
+	}
+	
+	
+}

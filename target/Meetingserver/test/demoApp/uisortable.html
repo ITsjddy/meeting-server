@@ -1,0 +1,37 @@
+<div ng-controller="demo_sortCtrl">
+	<style>
+td {
+	height: 30px;
+	width: 300px;
+	line-height: 30px;
+}
+
+tr.disable {
+	background-color: #999;
+}
+</style>
+	带模型：<button ng-click="toggleDisableAll(a)">
+			<span ng-show="!sortableOptions.disabled">禁用</span><span ng-show="sortableOptions.disabled">启用</span>
+		</button>
+	<table border="1" style="padding: 5px; width: 900px">
+		<tbody ui-sortable="sortableOptions" ng-model="array1">
+			<tr ng-repeat="a in array1" ng-class="({'active':!a.disabled})">
+				<td>{{a.index}}</td>
+				<td>{{a.name}}</td>
+				<td><button ng-click="toggleDisable(a)">
+						<span ng-show="!a.disabled">禁用</span><span ng-show="a.disabled">启用</span>
+					</button></td>
+			</tr>
+		</tbody>
+	</table>
+	带模型：
+
+	<ul ui-sortable ng-model="array1">
+		<li ng-repeat="a in array1">{{a.index}}{{a.name}}</li>
+	</ul>
+	不带模型：
+
+	<ul>
+		<li ng-repeat="a in array1">{{a.index}}{{a.name}}</li>
+	</ul>
+</div>

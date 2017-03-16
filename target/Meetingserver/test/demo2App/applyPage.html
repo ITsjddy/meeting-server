@@ -1,0 +1,52 @@
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="demo2.applyCtrl">
+  <div class="row">
+  <form role="form" class="form-horizontal">
+        <div class="form-group">
+          <label class="col-lg-2 control-label">姓名</label>
+          <div class="col-sm-4">
+            <input type="text" placeholder="姓名" ng-model="apply.name" name="name" class="form-control">
+          </div>
+          <label class="col-lg-2 control-label">itcode</label>
+          <div class="col-sm-4">
+            <input type="text" placeholder="itcode" name="itcode"  ng-model="apply.itcode" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">申请部门</label>
+          <div class="col-sm-4">
+            <input type="text" placeholder="申请部门" name="dept"  ng-model="apply.dept" class="form-control">
+          </div>
+          <label class="col-lg-2 control-label">部门编号</label>
+          <div class="col-sm-4">
+            <input type="text" placeholder="部门编号" name="deptno"  ng-model="apply.deptno" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">成本中心</label>
+          <div class="col-sm-4">
+            <input type="text" placeholder="成本中心" name="costcenter"  ng-model="apply.costcenter" class="form-control">
+          </div>
+          <label class="col-lg-2 control-label">成本中心编号</label>
+          <div class="col-sm-4 ">
+            <input type="text" placeholder="成本中心编号" name="costcenterid"  ng-model="apply.costcenterid" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-2 control-label">申请时间</label>
+          <div class="col-sm-4">
+            <input type="datetime" placeholder="申请时间" name="date"  ng-model="apply.date" class="form-control">
+          </div>
+          <label class="col-lg-2 control-label">申请费用</label>
+          <div class="col-sm-4">
+            <input type="text" placeholder="申请费用" name="money"  ng-model="apply.money" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-offset-2 col-lg-10">
+            <button class="btn btn-sm btn-white" type="submit" ng-click="save()">保存</button>
+            <button class="btn btn-sm btn-white" type="button" ng-click="close()">取消</button>
+          </div>
+        </div>
+      </form>
+  </div>
+  </div>

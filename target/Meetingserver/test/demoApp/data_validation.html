@@ -1,0 +1,51 @@
+<div ng-controller="dataValidationCtrl">
+<form name="demoForm" ng-submit="Save()" novalidate>
+<fieldset>
+<legend>表单</legend>
+<div>
+<label>长短，必填：</label>
+<div class="name">
+<input name="name" ng-model="demo.name" ng-minlength="4" type="text" ng-maxlength="10" required>
+<div ng-show="demoForm.name.$dirty&&demoForm.name.$invalid">
+<small ng-show="demoForm.name.$error.required">姓名必填啊！</small>
+<small ng-show="demoForm.name.$error.minlength">姓名不能少于4个字符！</small>
+<small ng-show="demoForm.name.$error.maxlength">姓名不能长于10个字符！</small>
+</div>
+</div>
+</div>
+<div>
+<label>数字：</label>
+<div name="age">
+<input name="age" type="text" ng-model="demo.age" ng-pattern="/^\d*$/" required>
+<div ng-show="demoForm.age.$dirty&&demoForm.age.$invalid">
+<small ng-show="demoForm.age.$error.required">数字必填！</small>
+<small ng-show="!demoForm.age.$error.required">请填写数字！</small>
+</div>
+</div>
+</div>
+<div>
+<label>邮箱：</label>
+<div name="email">
+<input name="email" type="text" ng-model="demo.email" ng-pattern="/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/" required>
+<div ng-show="demoForm.email.$dirty&&demoForm.email.$invalid">
+<small ng-show="demoForm.email.$error.required">邮箱必填！</small>
+<small ng-show="!demoForm.eamil.$error.required">请填写标准的邮箱格式！</small>
+</div>
+</div>
+</div>
+<div>
+<label>电话：</label>
+<div name="phone">
+<input name="phone" type="text" ng-model="demo.phone" ng-pattern="/^[\d\\*#]+$/"required>
+<div ng-show="demoForm.phone.$dirty&&demoForm.phone.$invalid">
+<small ng-show="demoForm.phone.$error.required">电话必填！</small>
+<small ng-show="!demoForm.phone.$error.required">电话必须由数字，#，*组成！</small>
+</div>
+</div>
+</div>
+<div>
+<input type="submit" value="提交">
+</div>
+</fieldset>
+</form>
+</div>

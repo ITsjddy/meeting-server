@@ -1,0 +1,16 @@
+<div ng-controller="demo_pager1Ctrl">
+
+    <iq_pager_list data="list">
+        
+        <ul>
+            <li ng-repeat="a in list.data.content">
+	        	<span>姓名：{{a.name}} itcode:{{a.itcode}}</span>
+	        	<br/>
+	            <span>{{a.dept}}</span><span>{{a.costcenter}}</span>
+        	</li>
+        </ul>
+        
+        <iq_pager_list_pager page=".data.number" totalpage=".data.totalPages" changepage=".pageChange"></iq_pager_list_pager>
+    </iq_pager_list>
+    <button ng-click="pageChange({'page':1})">change</button>
+ </div>

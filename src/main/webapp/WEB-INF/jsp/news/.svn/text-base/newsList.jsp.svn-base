@@ -1,0 +1,130 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%@include file="/WEB-INF/inc/taglibs.jsp" %>
+<html lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<title>新闻列表页面</title>
+	<!-- 分页样式 -->
+	<link rel="stylesheet" href="${ctx }/static/sysviews/page/css/pagecss.css">
+	<!-- 多选删除js -->
+	<script src="${ctx }/static/checkbox/js/deletes.js"></script>
+	<!-- 分页所需js -->
+	<script src="${ctx }/static/sysviews/page/js/tm.pagination.js"></script>
+	<script src="${ctx }/static/sysviews/page/js/pageService.js"></script>
+	<!-- 模块js -->
+	<script src="${ctx }/static/sysviews/news/js/list.js"></script>
+</head>
+<body  ng-app="newsApp" ng-controller="newsController">
+<ul class="breadcrumb"><li>新闻列表</li></ul>
+<input type="hidden" ng-init="searchParam.languageNow ='${languageNow }'" ng-model="searchParam.languageNow">
+<input type="hidden" ng-init="searchParam.categoryId ='${categoryId }'" ng-model="searchParam.categoryId">
+<!--nav-pills -->
+<ul class="nav  nav-tabs">
+		<li  ng-class="{active: searchParam.categoryId == category.id}" ng-repeat="category in categoryList" ><a href="javascript:void(0);" ng-click=changeCategory(category.id) >{{category.name}}</a></li>
+</ul><br/>
+<ul class="nav  nav-tabs">
+		<li  ng-class="{active: searchParam.languageNow == language.uneIdent}" ng-repeat="language in languageList" ><a href="javascript:void(0);" ng-click=changeListType(language.uneIdent) >{{language.name}}列表</a></li>
+</ul><br/>
+<div id="wrapper">
+        <div id="page-wrapper">
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                    <label>排序方式:
+						<select class="form-control" ng-init="sortType = ''" ng-model="sortType">
+							<option ng-selected ="sortType==createTime"  value="createTime">创建时间排序</option>
+							<option ng-selected ="sortType==updateTime"  value="updateTime">修改时间排序</option>
+							<option ng-selected ="sortType==sortFiled"  value="sortFiled">排序字段排序</option>
+						</select>
+					</label>
+					<label><a href="javaScript:void(0)" class="btn btn-primary" ng-click="updateSortType(sortType,searchParam.languageNow)" >更新排序</a></label>
+                        <div class="panel-heading">
+								<div id="dataTables-example_filter" class="dataTables_filter">
+									<label>标题:<input type="search"  ng-model="searchParam.title"class="form-control input-sm" placeholder=""aria-controls="dataTables-example"></label>
+										<a href="javaScript:void(0)" class="btn btn-primary" ng-click="searchByParam()" >查询</a>
+										<a href="${ctx }/${path}/news/toAdd?languageNow={{searchParam.languageNow}}" class="btn btn-primary" >新建</a>
+										<a href="javaScript:void(0);" ng-click="deletes()" class="btn btn-danger">删除</a>
+								</div>
+						</div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                     <th><input type="checkbox" ng-model="selectModel" ng-change="checkAll(selectModel)" ></th>
+                                       <th width="3%">序号</th>
+									  <!--  <th width="10%">缩略图</th> -->
+									   <th width="4%">语种</th>
+									   <th width="10%">标题</th>
+									  <!--  <th width="10%">简介</th> -->
+									   <th width="7%">分类</th>
+									   <th width="7%">位置</th>
+									   <th width="7%">创建时间</th>
+									   <th width="7%">修改时间</th>
+									   <th width="4%">排序</th>
+									   <th width="5%">状态</th>
+									   <th width="14%">移动</th>
+									   <th width="33%">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+									<tr ng-repeat="news in items">
+									<td><input type="checkbox" ng-model="news.check" ng-change="idSelect(news.id,news.check)" ></td>
+										<td><span class="badge">{{ $index + 1 }}</span></td>
+										<!-- <td ng-bind="news.zoomPic"></td> -->
+										<td ng-bind="news.languageName"></td>
+										<td ng-bind="news.title"></td>
+										<!-- <td ng-bind="news.remark"></td> -->
+										<td ng-bind="news.categoryName"></td>
+										<td ng-if="news.location == 'carousel'">轮播图</td>
+										<td ng-if="news.location == 'common'">普通新闻</td>
+										<td ng-if="news.location == 'headlines'">头条</td>
+										<td ng-bind="news.newsCreateTime"></td>
+										<td ng-bind="news.newsUpdateTime"></td>
+										<td ng-bind="news.sortNumber"></td>
+										<td ng-if="news.newStatus == 'publish'">已发布</td>
+										<td ng-if="news.newStatus == 'save'">已保存</td>
+										<td ng-if="news.newStatus == 'withdraw'">已撤回</td>
+										<td>
+											<a ng-show="searchParam.languageNow!='all'" href="javascript:void(0);" class="btn btn-primary" ng-click="moveIt('up',news.id,news.language)">上移</a>
+											<a ng-show="searchParam.languageNow!='all'"  href="javascript:void(0);" class="btn btn-primary" ng-click="moveIt('down',news.id,news.language)">下移</a>
+											<a ng-show="searchParam.languageNow=='all'" href="javascript:void(0);" class="btn disabled" >上移</a>
+											<a ng-show="searchParam.languageNow=='all'"  href="javascript:void(0);" class="btn disabled" >下移</a>
+										</td>
+										<td>
+											<div ng-show="news.newStatus == 'publish'">
+												<a href="${ctx }/${path}/news/toDetail?uniqueCode={{ news.id }}&id={{news.id}}&language={{news.language}}" class="btn btn-primary" >详情</a>
+												<a href="javascript:void(0);" ng-click="withdraw(news.id,news.language)" class="btn btn-warning" >撤回</a>
+											</div>
+											<div ng-show="news.newStatus != 'publish'">
+												<a  href="javascript:void(0);" ng-click="toTop(news.id,news.language)" class="btn btn-success" >置顶</a>
+<!-- 												<a ng-show="news.isTop != 'yes'" href="javascript:void(0);" ng-click="toTop(news.id,news.language)" class="btn btn-success" >置顶</a> -->
+												<!-- <a ng-show="news.isTop == 'yes'" href="javascript:void(0);" class="btn disabled" >置顶</a> -->
+												<a href="javascript:void(0);" ng-click="publish(news.id,news.language)" class="btn btn-warning" >发布</a>
+												<a href="${ctx }/${path}/news/toDetail?uniqueCode={{ news.id }}&id={{news.id}}&language={{news.language}}" class="btn btn-primary" >详情</a>
+												<a href="${ctx }/${path}/news/toEdit?uniqueCode={{ news.id }}&id={{news.id}}&language={{news.language}}" class="btn btn btn-info" >编辑</a>
+												<a href="javascript:void(0);" ng-click="deleteItem(news.id,news.language)" class="btn btn-danger" >删除</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+                            </table>
+                            <!-- 分页的标签 -->
+							<nav>
+								<tm-pagination conf="paginationConf"></tm-pagination>
+							</nav>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+           
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+</body>
+</html>

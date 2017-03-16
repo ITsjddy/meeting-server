@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/mau/!svn/ver/83399/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/guest/dao
+END
+IGuestAndServicePersonnelDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/svn/mau/!svn/ver/83367/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/guest/dao/IGuestAndServicePersonnelDao.java
+END
+IGuestDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/mau/!svn/ver/82678/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/guest/dao/IGuestDao.java
+END

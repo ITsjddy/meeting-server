@@ -1,0 +1,66 @@
+{"data" : {
+    "page" : {
+      "content" : [
+      	{"id":1,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"123456","costcenter":"成本中心1","costcenterid":"12345678","date":"2014-11-11","money":"111.00","state":"已结束"},
+		{"id":2,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"123456","costcenter":"成本中心1","costcenterid":"12345678","date":"2013-11-11","money":"222.00","state":"草稿"},
+		{"id":3,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"123456","costcenter":"成本中心1","costcenterid":"12345678","date":"2015-01-03","money":"333.00","state":"部门审批"},
+		{"id":4,"name":"徐超","itcode":"xuchaoh","dept":"信息化管理部","deptid":"111111","costcenter":"成本中心1","costcenterid":"12345678","date":"2014-01-03","money":"444.00","state":"部门审批"}
+      ],
+      "last" : false,
+      "totalPages" : 60,
+      "totalElements" : 600,
+      "number" : 1,
+      "size" : 10,
+      "first" : true,
+      "sort" : null,
+      "numberOfElements" : 10
+    },
+    "fields" : [ {
+      "key" : "id",
+      "title" : "名称1",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "name",
+      "title" : "姓名",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "dept",
+      "title" : "部门",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "deptid",
+      "title" : "部门编号",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "costcenter",
+      "title" : "成本中心",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "costcenter",
+      "title" : "成本中心编号",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "date",
+      "title" : "时间",
+      "display" : true,
+      "value" : null
+    }, {
+      "key" : "money",
+      "title" : "金额",
+      "display" : true,
+      "value" : null
+    } , {
+      "key" : "state",
+      "title" : "状态",
+      "display" : true,
+      "value" : null
+    } ]
+  },
+  "success" : true
+}

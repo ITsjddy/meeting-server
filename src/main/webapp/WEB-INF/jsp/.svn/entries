@@ -1,0 +1,340 @@
+10
+
+dir
+84690
+http://mausvn.smartdot.com.cn:8013/svn/mau/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/webapp/WEB-INF/jsp
+http://mausvn.smartdot.com.cn:8013/svn/mau
+
+
+
+2017-03-10T06:28:20.867325Z
+84670
+haomt
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+afea2739-b1fe-a841-ba7e-4db205294221
+
+403.jsp
+file
+
+
+
+
+2017-02-08T03:02:47.109000Z
+4a10d67a6a183e775a7206798cfa37a5
+2016-12-29T10:40:34.245152Z
+81503
+manshuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1225
+
+404.jsp
+file
+
+
+
+
+2017-02-08T03:02:48.104000Z
+92ca06d4a347258ba91842ca53691046
+2016-12-29T10:40:43.277568Z
+81504
+manshuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1040
+
+405.jsp
+file
+
+
+
+
+2017-02-08T03:02:49.107000Z
+3b6f1a036094a2ee23acb1740318f640
+2016-12-29T10:40:48.565977Z
+81505
+manshuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1034
+
+500.jsp
+file
+
+
+
+
+2017-02-08T03:02:50.107000Z
+18bf03384b229722415b0944852916b3
+2016-12-29T10:40:55.585990Z
+81506
+manshuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1027
+
+appVersion
+dir
+
+audience
+dir
+
+cloudGroup
+dir
+
+commonTask
+dir
+
+conHall
+dir
+
+dataDictionary
+dir
+
+dataDictionaryType
+dir
+
+deptment
+dir
+
+emergency
+dir
+
+exhibitors
+dir
+
+folder
+dir
+
+groupTokens
+dir
+
+groupadministrator
+dir
+
+guest
+dir
+
+importTemplate
+dir
+
+issue
+dir
+
+jpush
+dir
+
+login.jsp
+file
+
+
+
+
+2017-02-08T03:03:09.106000Z
+4828908ee663e0e740dc5f2f964204a5
+2016-12-29T11:06:49.286319Z
+81509
+manshuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4391
+
+main.jsp
+file
+
+
+
+
+2017-02-20T03:23:35.016000Z
+2f7fa639ee100f22301c7db38941d05d
+2017-02-15T12:32:40.536819Z
+83122
+manshuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2477
+
+media
+dir
+
+member
+dir
+
+news
+dir
+
+newsColumn
+dir
+
+publicshComment
+dir
+
+questionnaire
+dir
+
+sample
+dir
+
+savorPoint
+dir
+
+schedule
+dir
+
+servicePersonnel
+dir
+
+smsTemplate
+dir
+
+stroke
+dir
+
+sysgroup
+dir
+
+sysrole
+dir
+
+systemConfig
+dir
+
+systemSetting
+dir
+
+sysuser
+dir
+
+template
+dir
+
+test
+dir
+

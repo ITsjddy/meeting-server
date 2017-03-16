@@ -1,0 +1,31 @@
+html,body { height:100%;width:100%; overflow:hidden;}
+body{margin:0;padding:0; list-style:none;}
+#content{height:100%;width: 100%;padding: auto;margin: auto;}
+#texttop{height: 8%; background-color: #434343;margin: auto;min-height:53px;}
+#logo{margin-left:5px;float:left;width:40%;margin-top: 15px}
+.img-responsive{float: left;}
+.system-name{height:25px;line-height:20px;margin:4px 0 0 15px;padding-left:10px;font-size:16px;float:left;color: #ffffff}
+#textcenter{height: 92%;background-color: #FAFAFA;width: 100%;display:inline-block;}
+#leftcontent{height: 100%;width:15%;background-color: #FAFAFA; float: left;overflow: auto;}
+#rightcontent{height: 100%;width:85%;background-color: #FFFFFF;float: left;padding:10px}
+
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+width:0px;
+height:0px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+-webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+border-radius:10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+border-radius:10px;
+background:rgba(0,0,0,0.1);
+-webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background:rgba(255,0,0,0.4);
+}

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mau/!svn/ver/83264/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/mau/!svn/ver/80737/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/log4j.properties
+END
+applicationContext-oath2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mau/!svn/ver/81363/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-oath2.xml
+END
+dispatcher-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/mau/!svn/ver/80737/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/dispatcher-servlet.xml
+END
+applicationContext-properties.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mau/!svn/ver/80737/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-properties.xml
+END
+applicationContext-cxf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/mau/!svn/ver/81386/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-cxf.xml
+END
+applicationContext-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/mau/!svn/ver/81528/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-hibernate.xml
+END
+UAT_jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mau/!svn/ver/81572/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/UAT_jdbc.properties
+END
+LOCAL_jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/mau/!svn/ver/81748/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/LOCAL_jdbc.properties
+END
+applicationContext-redis.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/mau/!svn/ver/81742/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-redis.xml
+END
+applicationContext-security.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/mau/!svn/ver/82143/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-security.xml
+END
+applicationContext-tx.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/mau/!svn/ver/81571/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-tx.xml
+END
+applicationContext-datasource.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/mau/!svn/ver/80737/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-datasource.xml
+END
+applicationContext-default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/mau/!svn/ver/80737/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-default.xml
+END
+DEV_jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/mau/!svn/ver/81767/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/DEV_jdbc.properties
+END
+applicationContext-task.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/mau/!svn/ver/83264/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/applicationContext-task.xml
+END
+PROD_jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/mau/!svn/ver/81572/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/resources/conf/PROD_jdbc.properties
+END

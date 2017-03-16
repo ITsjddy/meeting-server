@@ -1,0 +1,36 @@
+<div ng-controller="demo_flowCtrl">
+流程状态service：{{m}}
+<select ng-model="m">
+<option ng-repeat="(k,v) in list" value="{{v}}">{{k}}</option></select>
+<div>
+线形流程图：<br/>
+<div style="width: 800px;height: 200px;background-color:#ccc" disabled>&lt;iq_flow_line_chart flow_id="flow_id"&gt;&lt;/iq_flow_line_chart&gt;<br/>
+传入流程id，或流程实例id，显示历史流转日志和预测审批环节。<br/>
+可选参数：option 对象，默认值及说明：<br/>
+{<br/>
+    		shortMode:false,//将显示节点精简到 …… 上一节点 当前节点 下一节点……<br/>
+    		notCaptionIds:[],//不显示列表  对预测节点和历史节点进行不显示的筛选,id在列表中的不显示 短模式无效<br/>
+    		captionIds:null,//显示列表  对预测节点和历史节点进行显示的筛选,只有id在数组中的列表显示 短模式无效<br/>
+    		prefix:function(list){/*显示列表调整方法，传入所有流程线形图的节点的列表，返回调整后的节点列表，返回结果即为显示节点列表*/<br/>
+    			return list;<br/>
+}<br/>
+示例可输入：worklist等，或自己得到的流程实例id</div>
+
+示例：id:<input ng-model="flow_id" ng-model="flow_id"></input>
+option:{{opt}}
+notCaptionIds:<ul><li ng-repeat="cid in opt.notCaptionIds track by $index"><input ng-model="opt.notCaptionIds[$index]"></li></ul><button class="btn" ng-click="add()">+</button> <button class="btn" ng-click="del()">-</button>
+<iq_flow_line_chart flow_id="flow_id" option="opt"></iq_flow_line_chart>
+</div>
+
+<div>
+历史审批记录：<br/>
+<div style="width: 800px;height: 50px;background-color:#ccc" disabled>&lt;iq_flow_log flow_id="flow_id"&gt;&lt;/iq_flow_log&gt;<br/>
+传入流程实例id，显示历史审批记录。<br/>
+示例可输入：32位的流程实例id</div>
+示例：id:<input ng-model="flow_id1" ng-model="flow_id1"></input>
+<iq_flow_log flow_id="flow_id1"></iq_flow_log>
+<iq_flow_log flow_id="flow_id1" log_style="style2"></iq_flow_log>
+</div>
+
+
+</div>

@@ -1,0 +1,17 @@
+<div ng-controller="iqpopupCtrl">
+    <button class="btn btn-default" ng-click="alert()">Alert</button>
+    <button class="btn btn-default" ng-click="confirm()">Confirm</button>
+    <button class="btn btn-default" ng-click="prompt()">Prompt</button>
+    <button class="btn btn-default" ng-click="deptlist()">Deptlist</button>
+    <button class="btn btn-default" ng-click="deptpeople()">Deptpeople</button>
+    <button class="btn btn-default" ng-click="sharefile()">Sharefile</button>
+    <button class="btn btn-default" ng-click="filetree()">Filetree</button>
+
+    <br/><br/><br/><br/>
+    <iq-input-select choicedata="myname" popuptype="'shareFile'"></iq-input-select>
+    <br/><br/>
+    <iq-input-select choicedata="myclass" popuptype="'peopleMultiple'" withparam="b"></iq-input-select>
+    <br/><br/>
+    <input type="button" value="获取数据" ng-click="getall()"/>
+   	
+</div>

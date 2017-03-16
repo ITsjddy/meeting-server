@@ -1,0 +1,30 @@
+<div ng-init="array = [{id:123456789,name:'xuchaoh'},{id:123456789,name:'xuchaoh2'},{id:123456789,name:'xuchao3'}]">
+	模型输入：id:<input ng-model="a.id"><br/>
+	name:<input ng-model="a.name"><br/>
+	<button ng-click="a = {id:123456789,name:'xuchaoh'}">click</button>
+	
+	<iq_user iq_user_id="a.id" iq_user_name="a.name"></iq_user>
+	<iq_user ng-repeat-start="b in array" iq_user_id="b.id" iq_user_name="b.name"></iq_user>
+	<span ng-repeat-end ng-if="!$last">, </span>
+	<br>
+	touxiang :<img iq-user-image="a.id">
+	静态值：<img iq-user-image="'1234567890'">
+	<table class="table-user">
+	<tr><td>样式使用美工提供：</td><td><img iq-user-image="'1234567890'"></td>
+	</tr>
+	</table>
+	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	icheck:
+	
+	<br/>
+	value:{{xxx}}
+	<input icheck type="checkbox" ng-disabled="xxdisabled" ng-model="xxx"/>
+	<button ng-click="xxdisabled = true">disable</button>
+	<button ng-click="xxdisabled = false">enable</button>
+	<button ng-click="xxx = true">check</button>
+	<button ng-click="xxx = false">uncheck</button>
+</div>

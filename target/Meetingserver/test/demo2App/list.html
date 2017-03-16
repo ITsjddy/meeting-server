@@ -1,0 +1,54 @@
+<div ng-controller="demo2.IndexCtrl">
+  <div class="mail-box-header" >
+    <form method="get" action="../../templates/app1/index.html" class="pull-right mail-search">
+      <div class="input-group">
+        <input type="text" class="form-control input-sm" name="search" placeholder="没用的查询">
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-sm btn-primary"> 查询 </button>
+        </div>
+      </div>
+    </form>
+    <h2> 示例首页 </h2>
+    <div class="mail-tools tooltip-demo m-t-md">
+      <div class="btn-group pull-right">
+        <button class="btn btn-white btn-sm" ng-click="refresh('pre')"><i class="fa fa-arrow-left"></i></button>
+        <button ng-class="['btn btn-white btn-sm',1==pg?'active':'']" ng-click="refresh(1)">1</button>
+        <button ng-class="['btn btn-white btn-sm',2==pg?'active':'']" ng-click="refresh(2)">2</button>
+        <button ng-class="['btn btn-white btn-sm',3==pg?'active':'']" ng-click="refresh(3)">3</button>
+        <button ng-class="['btn btn-white btn-sm',4==pg?'active':'']" ng-click="refresh(4)">4</button>
+        <button class="btn btn-white btn-sm" ng-click="refresh('next')"><i class="fa fa-arrow-right"></i></button>
+      </div>
+      <button class="btn btn-white btn-sm" ng-click="refresh()" data-toggle="tooltip" data-placement="left" title="刷新页面"><i class="fa fa-refresh"></i> 刷新</button>
+      <button class="btn btn-white btn-sm" ng-click="show()" data-toggle="tooltip" data-placement="top" title="新增"><i class="fa fa-plus"></i></button>
+  </div>
+  <div class="main-box">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th> 编号 </th>
+          <th> 申请人 </th>
+          <th> 申请部门 </th>
+          <th> 成本中心 </th>
+          <th> 申请时间 </th>
+          <th> 申请费用 </th>
+          <th> 当前状态 </th>
+          <th> 操作 </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="apply in applys">
+          <td>{{$index+1}}</td>
+          <td>{{apply.name}}({{apply.age}})</td>
+          <td>{{apply.address}}({{apply.deptid}})</td>
+          <td>{{apply.phone}}({{apply.costcenterid}})</td>
+          <td>{{apply.date}}</td>
+          <td>￥{{apply.money}}</td>
+          <td>{{apply.state}}</td>
+          <td>
+          <a ui-sref="index.demo2.apply({appId:apply.id})">编辑</a>
+          <button class="btn btn-white btn-sm" ng-click="del(apply.id)" title="删除"><i class="fa fa-trash-o"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

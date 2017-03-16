@@ -1,0 +1,28 @@
+{
+    "sites": [
+        {
+            "Name": "菜鸟教程",
+            "Url": "www.runoob.com",
+            "Country": "CN",
+            "type":"3"
+        },
+        {
+            "Name": "Google",
+            "Url": "www.google.com",
+            "Country": "USA",
+            "type":"2"
+        },
+        {
+            "Name": "Facebook",
+            "Url": "www.facebook.com",
+            "Country": "USA",
+            "type":"1"
+        },
+        {
+            "Name": "微博",
+            "Url": "www.weibo.com",
+            "Country": "CN",
+            "type":"0"
+        }
+    ]
+}

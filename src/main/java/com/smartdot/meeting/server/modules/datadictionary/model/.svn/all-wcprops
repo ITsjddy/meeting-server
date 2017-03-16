@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/mau/!svn/ver/84252/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/datadictionary/model
+END
+DataDictionaryAddEdit.java
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/mau/!svn/ver/84252/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/datadictionary/model/DataDictionaryAddEdit.java
+END
+DataDictionaryVO.java
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/svn/mau/!svn/ver/84706/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/datadictionary/model/DataDictionaryVO.java
+END
+DataDictionaryLanguage.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/mau/!svn/ver/84252/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/datadictionary/model/DataDictionaryLanguage.java
+END
+DataDictionaryForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/svn/mau/!svn/ver/84706/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/datadictionary/model/DataDictionaryForm.java
+END
+DataDictionaryPageForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/mau/!svn/ver/84706/MAPP/%E4%BC%9A%E8%AE%AE%E4%BA%A7%E5%93%81/meeting/meeting-server/src/main/java/com/smartdot/meeting/server/modules/datadictionary/model/DataDictionaryPageForm.java
+END

@@ -1,0 +1,46 @@
+
+
+<div ng-controller="demo_datepickerCtrl">
+	日期选择：<br/>
+	dpOption{//默认设置值 其他属性参照bootstrap-datapicker<br/>
+		autoclose: true,// 选中关闭<br/>
+        format: 'yyyy-mm-dd hh:ii',// 默认样式 ，mm小写是数字 大写是中文<br/>
+        weekStart:1,// 开始星期一<br/>
+        todayHighlight:true,// 高亮 今天的日期<br/>
+        enableOnReadonly:true<br/>
+        minuteStep:number<br/>
+    }<br/>
+	普通，带模型不自动关闭<input type="text" ng-datepicker dpOption="{format: 'yyyy-mm-dd',autoclose: false,toggleActive:true}" ng-model="aaa">{{aaa}}<br/>
+	普通，带模型默认自动关闭<input type="text" ng-datepicker dpOption="{format: 'yyyy-mm-dd',autoclose: true,toggleActive:true}" ng-model="aaa">{{aaa}}<br/>
+	
+	字符串转日期格式（iq-date-filter必须ng-model）<input type="text" ng-datepicker iq-date-filter ng-model="m" dpOption="{format: 'yyyy-mm-dd'}"> {{m}}<br/>
+
+	字符串不转日期格式<input type="text" ng-datepicker  ng-model="m3" dpOption="{format: 'yyyy-mm-dd'}"> {{m3}} <br/>
+ <input ng-required="dayHide" type="text" ng-model="m3" class="form-control input-time-select" ng-datepicker dpOption="{format: 'yyyy-mm-dd',autoclose: true,toggleActive:true}">
+	
+	
+	日期选择,只选年月：<input type="text" ng-datepicker dpOption="{format: 'yyyy-mm' ,minView:3, maxView:3, startView:3}" ng-model="m4"> {{m4}}<br/>
+	
+	日期选择,只选年月：<input type="text" ng-datepicker dpOption="{format: 'yyyy-mm' ,minView:3, maxView:3, startView:3}"><br/>
+	
+	范围设定：当前日期的前后10天<input type="text" ng-datepicker dpOption="ng2" ng-model="bbb">{{bbb}}<br/>
+	只选工作日<input type="text" ng-datepicker dpOption="{daysOfWeekDisabled:'0,6'}"><br/>
+
+	时间选择,只选小时：<input type="text" ng-datepicker ng-model="atime" dpOption="{format: 'hh:00' ,minView:1, maxView:1, startView:1}">{{atime}}<br/>
+
+	时间选择,默认小时分钟：<input type="text" ng-datepicker ng-model="btime" dpOption="{format: 'hh:ii' ,minView:0, maxView:1, startView:1}">{{btime}}<br/>
+	
+	时间选择,15分钟间隔：<input type="text" ng-datepicker dpOption="{format: 'hh:ii' ,minView:0, maxView:1, startView:1, minuteStep:15}"><br/>
+	
+	时间选择,上下午模式：<input type="text" ng-datepicker ng-model="ctime" dpOption="{ showMeridian:true, format: 'hh:ii' ,minView:0,maxView:1,startView:1}"><br/>
+
+<br/>
+范围选择
+{{range}}
+	<div class="input-daterange" ng-daterange>
+	    <input type="text" class="input-small" ng-model="range.a1"/>
+	    <span class="add-on">to</span>
+	    <input type="text" class="input-small" ng-model="range.a2" />
+	</div>
+	
+</div>
