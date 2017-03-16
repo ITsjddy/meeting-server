@@ -72,7 +72,6 @@
 
     /* 初始化onok事件 */
     function initButtons() {
-
         dialog.onok = function () {
             var remote = false, list = [], id, tabs = $G('tabhead').children;
             for (var i = 0; i < tabs.length; i++) {
